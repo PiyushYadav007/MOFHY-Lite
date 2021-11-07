@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
 				exit;
 			}
 			elseif($Result['status']==1 && strlen($Result['message'])>1){
-				$sql = mysqli_query($connect,"INSERT INTO `hosting_account`(`account_username`, `account_password`, `account_key`, `account_domain`, `account_status`, `account_date`, `account_for`) VALUES ('".$Result['username']."','".$FormData['password']."','".$FormData['username']."','".$Result['domain']."','1','".$Result['date']."','".$ClientInfo['hosting_client_key']."')");
+				$sql = mysqli_query($connect,"INSERT INTO `hosting_account`(`account_username`, `account_password`, `account_key`, `account_domain`, `account_status`, `account_date`, `account_for`) VALUES ('".$Result['username']."','".$FormData['password']."','".$FormData['username']."','".$FormData['domain']."','1','".$Result['date']."','".$ClientInfo['hosting_client_key']."')");
 				if($sql){
 					$EmailTo = [['email' => $FormData['email']]];
 					$Body = "
@@ -62,7 +62,7 @@ if(isset($_POST['submit'])){
 						<h3>Hi ".$ClientInfo['hosting_client_fname'].",</h3><p>Congratulations! You have successfully created a new free hosting account. More details are given below:</p><br>
 						<b>cPanel Username: </b><span>".$Result['username']."</span><br>
 						<b>cPanel Password: </b><span>".$FormData['password']."</span><br>
-						<b>Main Domain: </b><span>".$Result['domain']."</span><br>
+						<b>Main Domain: </b><span>".$FormData['domain']."</span><br>
 						<b>Account Date: </b><span>".$Result['date']."</span><br>
 						<b>cPanel URL: </b><span>".API_CPANEL_URL."</span><br>
 						<b>Server IP: </b><span>".API_SERVER_IP."</span><br>

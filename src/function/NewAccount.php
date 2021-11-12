@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
 	$FormData = array(
 		'username' => substr(str_shuffle('qwertyuioplkjhgfdsazxcvbnm012345789QWERTYUIOPLKJHGFDSAZXCVBNM'),0,8),
 		'password' => substr(str_shuffle('qwertyuioplkjhgfdsazxcvbnm012345789QWERTYUIOPLKJHGFDSAZXCVBNM'),0,16),
-		'domain' => $_POST['domain'],
+		'domain' => strtolower($_POST['domain']),
 		'email' => $ClientInfo['hosting_client_email'],
 		'plan' => $_POST['package']
 	);

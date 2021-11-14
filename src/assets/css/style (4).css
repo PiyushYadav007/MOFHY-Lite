@@ -1,0 +1,241 @@
+.nav-height{
+	height: auto;
+}
+
+.m5x{
+	margin-right: 6px;
+}
+
+.m5t{
+	margin-top: 8px !important;
+}
+
+.bg-matrix-1{
+	background-image: linear-gradient(-45deg, pink, purple) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+.bg-matrix-2{
+	background-image: linear-gradient(-45deg, peachpuff, orange) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+.bg-matrix-3{
+	background-image: linear-gradient(-45deg, skyblue, steelblue) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+.bg-matrix-4{
+	background-image: linear-gradient(-45deg, cyan, green) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+.tool-1{
+  background-image: linear-gradient(-45deg, cyan, skyblue) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+.tool-2{
+  background-image: linear-gradient(-45deg, red, pink) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+.tool-3{
+  background-image: linear-gradient(-45deg, silver, grey) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+.tool-4{
+  background-image: linear-gradient(-45deg, maroon, brown) !important;
+    color:#fff;
+    border-color:transparent;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#hidden-area{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	max-width: 350px;
+	display: block;
+}
+
+.nolink:hover{
+	text-decoration: none;
+}
+
+.fw-bold{
+	font-weight: 600 !important;
+}
+
+/* nav tabs */
+
+.tabs {
+  overflow: hidden;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-item {
+	margin-right:5px;
+}
+
+.tab-item:hover {
+  border-color: rgba(0, 0, 0, 0.02);
+}
+
+.btn.tab-item.active {
+  border-color: #199de9;
+  box-shadow: none;
+  outline: none;
+}
+
+.tab-hover.active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tab-content {
+  display: none;
+  padding: 0.5rem 0;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-lg-12 , .col-md-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.list-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.rounded {
+  border-radius: 0.25rem !important;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 1.25rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529co;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-success {
+  color: #ffffff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-warning {
+  color: #ffffff;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.col-lg-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.col-md-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+	.hidden-on-up{
+		display: none;
+	}
+	.m5x{
+		margin-right: 0px;
+	}
+	.container{
+	  max-width: 960px;
+	}
+}

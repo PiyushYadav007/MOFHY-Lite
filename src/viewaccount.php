@@ -3,7 +3,7 @@ if(isset($_GET['account_id'])){
 	$PageInfo = ['title'=>'View Account ('.$_GET['account_id'].")",'rel'=>''];
 	require_once __DIR__.'/includes/Connect.php';
 	require_once __DIR__.'/handler/AreaHandler.php';
-	require_once __DIR__.'/includes/Header.php';
+	require_once __DIR__.'/includes/Header2.php';
 	require_once __DIR__.'/handler/CookieHandler.php';
 	require_once __DIR__.'/handler/ValidationHandler.php';
 	require_once __DIR__.'/handler/HostingHandler.php';

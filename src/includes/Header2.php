@@ -19,7 +19,7 @@ if(file_exists('installation/install.php')){
 
     <link href="assets/css/all.min.css" rel="stylesheet" />
     <link href="assets/css/style2.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    
  
   </head>
     <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-theme-onload="true">
